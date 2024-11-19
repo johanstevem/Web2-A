@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1.title {
+    text-align: center;
+    color: #003366;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #564d4d;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-vehiculo-btn {
+    background-color: #28a745;
+    margin-bottom: 20px;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Tabla */
+.vehiculos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.vehiculos-table th, .vehiculos-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.vehiculos-table th {
+    background-color: #003366;
+    color: white;
+}
+
+.vehiculos-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.vehiculos-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para los botones de acción en la tabla */
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
