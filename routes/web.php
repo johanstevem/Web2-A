@@ -5,9 +5,8 @@ use App\Http\Controllers\VehiculoController;
 
 
 Route::get('/', function () {
-    return view('index'); // Asegúrate de que esta vista esté correctamente definida
+    return view('index'); 
 });
 
-// CRUD para la tabla vehículos
 Route::resource('vehiculos', VehiculoController::class);
 
