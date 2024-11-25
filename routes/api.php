@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-//aqui deben ir las rutas y no en el archivo web.php
+
 Route::resource('vehiculos', VehiculoController::class);
