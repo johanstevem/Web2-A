@@ -9,10 +9,10 @@ class Vehiculo extends Model
 {
     use HasFactory;
 
-    protected $table = 'vehiculos';  
+    protected $table = 'vehiculo';  
 
     protected $fillable = [
-        'descripcion_de_vehiculos',  
-        'categoria',                  
+        'descripcion_de_vehiculo',  
+        'categorias',                  
     ];
 }

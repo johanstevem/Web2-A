@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+//aqui deben ir las rutas y no en el archivo web.php
+Route::resource('vehiculos', VehiculoController::class);

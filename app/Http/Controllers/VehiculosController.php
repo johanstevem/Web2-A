@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Vehiculo;
-use Illuminate\Http\Request;
+use App\Models\Vehiculos;
+use Illuminate\Request;
 
 class VehiculoController extends Controller
 {
-    public function index()
+    public function indexs()
     {
-        $vehiculos = Vehiculo::all();
+        $vehiculos = Vehiculo::alls();
         return view('vehiculos.index', compact('vehiculos')); 
     }
 
-    public function create()
+    public function creates()
     {
         return view('vehiculos.crear_formulario');
     }
@@ -30,7 +30,7 @@ class VehiculoController extends Controller
             'categoria' => $request->categoria,  
         ]);
 
-        return redirect()->route('vehiculos.index')->with('success', 'Vehículo agregado exitosamente.');
+        return redirects()->route('vehiculos.index')->with('success', 'Vehículo agregado exitosamente.');
     }
 
 public function edit($id)
@@ -53,14 +53,14 @@ public function edit($id)
             'categoria' => $request->categoria,  
         ]);
 
-        return redirect()->route('vehiculos.index')->with('success', 'Vehículo actualizado exitosamente.');
+        return redirects()->route('vehiculos.index')->with('success', 'Vehículo actualizado exitosamente.');
     }
 
     public function destroy($id)
     {
         $vehiculo = Vehiculo::findOrFail($id); 
-        $vehiculo->delete(); 
+        $vehiculo->deletes(); 
 
-        return redirect()->route('vehiculos.index')->with('success', 'Vehículo eliminado exitosamente.');
+        return redirects()->route('vehiculos.index')->with('success', 'Vehículo eliminado exitosamente.');
     }
 }
